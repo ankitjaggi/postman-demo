@@ -1,301 +1,295 @@
 {
-  "variables": [],
-  "info": {
-    "name": "Hack Day Test",
-    "_postman_id": "5665-78e4f398-8679-d90c-b235-889e259bfbe2",
-    "description": "this is newer",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  "Name": "Hack Day Test",
+  "BaseUri": "http://echo.getpostman.com",
+  "ServerConfiguration": {
+    "Environments": [],
+    "Parameters": []
   },
-  "item": [
+  "ImageUri": "",
+  "Description": "this is newer",
+  "Version": "1.0",
+  "AdditionalHeaders": [],
+  "Authentication": {
+    "Type": "None",
+    "AuthType": "None",
+    "Parameters": [],
+    "AuthGrantTypes": [],
+    "AuthScopes": []
+  },
+  "Endpoints": [
     {
-      "_postman_id": "5665-a68faaa1-39ed-22c1-1e2e-3aa8fca8b22d",
-      "name": "some folder",
-      "description": "",
-      "item": []
-    },
-    {
-      "_postman_id": "5665-2b5e83a5-ad6c-f6ae-60ea-925c89557808",
-      "name": "some folder copy",
-      "description": "",
-      "item": []
-    },
-    {
-      "_postman_id": "5665-b0672af1-98a5-b15e-4d14-db0ad69901ed",
-      "name": "some folder copy copy copy",
-      "description": "",
-      "item": []
-    },
-    {
-      "_postman_id": "5665-ed652edf-cc69-f062-6520-a340cd01a8f4",
-      "name": "some folder copy copy copy copy",
-      "description": "",
-      "item": []
-    },
-    {
-      "_postman_id": "5665-b802592b-a613-2c6c-6ca3-3c14d31203de",
-      "name": "echo.getpostman.com/get copy",
-      "request": {
-        "url": "echo.getpostman.com/get",
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
-        },
-        "description": "blah blah\n"
+      "Name": "echo.getpostman.com/get copy",
+      "Description": "TODO: Add Description",
+      "HTTPMethod": "GET",
+      "Group": "Misc",
+      "RequiresAuthentication": false,
+      "Route": "/get",
+      "Response": {
+        "Optional": false,
+        "Type": "Dynamic",
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Attributes": {},
+        "IsArray": false,
+        "IsMap": false,
+        "Name": "Response"
       },
-      "response": [
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [],
+      "Errors": [],
+      "TestCases": [
         {
-          "id": "5665-20e77633-d2ca-445f-0844-425a10bdf6f0",
-          "name": "200",
-          "originalRequest": {
-            "url": "echo.getpostman.com/get",
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "description": "blah blah\n"
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
-          "header": [
+          "Name": "echo.getpostman.com/get copy",
+          "Description": "TODO: Add Description",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [
             {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "",
-              "name": "Access-Control-Allow-Credentials",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Credentials",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Headers",
-              "value": "",
-              "name": "Access-Control-Allow-Headers",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Headers",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Methods",
-              "value": "",
-              "name": "Access-Control-Allow-Methods",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Methods",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Origin",
-              "value": "",
-              "name": "Access-Control-Allow-Origin",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Origin",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Expose-Headers",
-              "value": "",
-              "name": "Access-Control-Expose-Headers",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Expose-Headers",
+              "Value": ""
             },
             {
-              "key": "Connection",
-              "value": "keep-alive",
-              "name": "Connection",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Connection",
+              "Value": "keep-alive"
             },
             {
-              "key": "Content-Encoding",
-              "value": "gzip",
-              "name": "Content-Encoding",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Content-Encoding",
+              "Value": "gzip"
             },
             {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8",
-              "name": "Content-Type",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Content-Type",
+              "Value": "application/json; charset=utf-8"
             },
             {
-              "key": "Date",
-              "value": "Thu, 12 Jan 2017 09:02:19 GMT",
-              "name": "Date",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Date",
+              "Value": "Thu, 12 Jan 2017 09:02:19 GMT"
             },
             {
-              "key": "ETag",
-              "value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\"",
-              "name": "ETag",
-              "description": ""
+              "CheckValue": false,
+              "Name": "ETag",
+              "Value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\""
             },
             {
-              "key": "Server",
-              "value": "nginx/1.10.1",
-              "name": "Server",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Server",
+              "Value": "nginx/1.10.1"
             },
             {
-              "key": "Transfer-Encoding",
-              "value": "chunked",
-              "name": "Transfer-Encoding",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Transfer-Encoding",
+              "Value": "chunked"
             },
             {
-              "key": "Vary",
-              "value": "Accept-Encoding",
-              "name": "Vary",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Vary",
+              "Value": "Accept-Encoding"
             },
             {
-              "key": "set-cookie",
-              "value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly",
-              "name": "set-cookie",
-              "description": ""
+              "CheckValue": false,
+              "Name": "set-cookie",
+              "Value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly"
             }
           ],
-          "cookie": [
-            {
-              "expires": "Mon Jan 18 2038 21:44:07 GMT+0000 (UTC)",
-              "httpOnly": true,
-              "domain": "echo.getpostman.com",
-              "path": "/",
-              "secure": false,
-              "value": "s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY",
-              "key": "sails.sid"
-            }
-          ],
-          "responseTime": "968",
-          "body": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}"
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBody": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}",
+          "ExpectedBodyMatchMode": "KEYS",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
         }
-      ]
+      ],
+      "WrapBodyInObject": false
     },
     {
-      "_postman_id": "5665-3f3e4eed-fb84-3cd7-3baa-ceda4489ab39",
-      "name": "echo.getpostman.com/get copy copy",
-      "request": {
-        "url": "echo.getpostman.com/get",
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
-        },
-        "description": "blah blah\n"
+      "Name": "echo.getpostman.com/get copy copy",
+      "Description": "TODO: Add Description",
+      "HTTPMethod": "GET",
+      "Group": "Misc",
+      "RequiresAuthentication": false,
+      "Route": "/get",
+      "Response": {
+        "Optional": false,
+        "Type": "Dynamic",
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Attributes": {},
+        "IsArray": false,
+        "IsMap": false,
+        "Name": "Response"
       },
-      "response": [
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [],
+      "Errors": [],
+      "TestCases": [
         {
-          "id": "5665-4c0b7906-a23a-e663-263f-e378cfcb732e",
-          "name": "200",
-          "originalRequest": {
-            "url": "echo.getpostman.com/get",
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "description": "blah blah\n"
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "_postman_previewtype": "text",
-          "header": [
+          "Name": "echo.getpostman.com/get copy copy",
+          "Description": "TODO: Add Description",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [
             {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "",
-              "name": "Access-Control-Allow-Credentials",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Credentials",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Headers",
-              "value": "",
-              "name": "Access-Control-Allow-Headers",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Headers",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Methods",
-              "value": "",
-              "name": "Access-Control-Allow-Methods",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Methods",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Allow-Origin",
-              "value": "",
-              "name": "Access-Control-Allow-Origin",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Allow-Origin",
+              "Value": ""
             },
             {
-              "key": "Access-Control-Expose-Headers",
-              "value": "",
-              "name": "Access-Control-Expose-Headers",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Access-Control-Expose-Headers",
+              "Value": ""
             },
             {
-              "key": "Connection",
-              "value": "keep-alive",
-              "name": "Connection",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Connection",
+              "Value": "keep-alive"
             },
             {
-              "key": "Content-Encoding",
-              "value": "gzip",
-              "name": "Content-Encoding",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Content-Encoding",
+              "Value": "gzip"
             },
             {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8",
-              "name": "Content-Type",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Content-Type",
+              "Value": "application/json; charset=utf-8"
             },
             {
-              "key": "Date",
-              "value": "Thu, 12 Jan 2017 09:02:19 GMT",
-              "name": "Date",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Date",
+              "Value": "Thu, 12 Jan 2017 09:02:19 GMT"
             },
             {
-              "key": "ETag",
-              "value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\"",
-              "name": "ETag",
-              "description": ""
+              "CheckValue": false,
+              "Name": "ETag",
+              "Value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\""
             },
             {
-              "key": "Server",
-              "value": "nginx/1.10.1",
-              "name": "Server",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Server",
+              "Value": "nginx/1.10.1"
             },
             {
-              "key": "Transfer-Encoding",
-              "value": "chunked",
-              "name": "Transfer-Encoding",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Transfer-Encoding",
+              "Value": "chunked"
             },
             {
-              "key": "Vary",
-              "value": "Accept-Encoding",
-              "name": "Vary",
-              "description": ""
+              "CheckValue": false,
+              "Name": "Vary",
+              "Value": "Accept-Encoding"
             },
             {
-              "key": "set-cookie",
-              "value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly",
-              "name": "set-cookie",
-              "description": ""
+              "CheckValue": false,
+              "Name": "set-cookie",
+              "Value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly"
             }
           ],
-          "cookie": [
-            {
-              "expires": "Mon Jan 18 2038 21:44:07 GMT+0000 (UTC)",
-              "httpOnly": true,
-              "domain": "echo.getpostman.com",
-              "path": "/",
-              "secure": false,
-              "value": "s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY",
-              "key": "sails.sid"
-            }
-          ],
-          "responseTime": "968",
-          "body": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}"
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBody": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}",
+          "ExpectedBodyMatchMode": "KEYS",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
         }
-      ]
+      ],
+      "WrapBodyInObject": false
     }
-  ]
+  ],
+  "CustomTypes": [],
+  "CodeGenSettings": {
+    "SynchronyMode": 0,
+    "ModelSerializationScheme": "Json",
+    "ArraySerialization": "Indexed",
+    "Nullify404": false,
+    "UseHttpMethodPrefix": true,
+    "UseModelPrefix": false,
+    "UseExceptionPrefix": true,
+    "UseEnumPrefix": true,
+    "UseControllerPrefix": true,
+    "UseConstructorsForConfig": false,
+    "Timeout": 0.0,
+    "AndroidUseAppManifest": false,
+    "iOSUseAppInfoPlist": false,
+    "iOSGenerateCoreData": false,
+    "CollapseParamsToArray": false,
+    "RunscopeEnabled": false,
+    "AndroidHttpClient": "UNIREST",
+    "ObjCHttpClient": "UNIREST",
+    "CSharpHttpClient": "UNIREST",
+    "NodeHttpClient": "NODE_REQUEST",
+    "JavaUsePropertiesConfig": false,
+    "PHPHttpClient": "UNIREST",
+    "EnableAdditionalModelProperties": false,
+    "PreserveParameterOrder": true,
+    "ValidateRequiredParameters": false,
+    "AppendContentHeaders": true,
+    "GenerateInterfaces": false,
+    "UseCommonSDKLibrary": false,
+    "ParameterArrayFormat": 2,
+    "GenerateTravisConfig": false,
+    "GenerateCircleConfig": false,
+    "GenerateAppveyorConfig": false,
+    "GenerateJenkinsConfig": false,
+    "EnableLogging": false,
+    "EnableHttpCache": false,
+    "Retries": 0,
+    "RetryInterval": 1.0,
+    "GenerateAdvancedDocs": false,
+    "StoreTimezoneInformation": false
+  },
+  "Errors": [],
+  "TestGenSettings": {
+    "Configuration": {},
+    "TestTimeout": 30,
+    "PrecisionDelta": 0.01
+  }
 }

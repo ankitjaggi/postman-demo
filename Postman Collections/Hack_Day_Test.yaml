@@ -1,0 +1,67 @@
+swagger: 2.0
+info:
+  version: 1.0
+  title: Hack Day Test
+  description: this is newer
+  license:
+    name: MIT
+    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
+host: echo.getpostman.com
+basePath: /
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /get:
+    get:
+      description: 'TODO: Add Description'
+      tags:
+      - Misc
+      operationId: echo.getpostman.com/get copy copy
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: 
+          schema:
+            type: string
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /get
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: KEYS
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers:
+            Access-Control-Allow-Credentials: 
+            Access-Control-Allow-Headers: 
+            Access-Control-Allow-Methods: 
+            Access-Control-Allow-Origin: 
+            Access-Control-Expose-Headers: 
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Type: application/json; charset=utf-8
+            Date: Thu, 12 Jan 2017 09:02:19 GMT
+            ETag: W/"102-S8VFdGZP4Nc3us63AMj1VA"
+            Server: nginx/1.10.1
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            set-cookie: sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly
+          body: '{"args":{},"headers":{"host":"echo.getpostman.com","cache-control":"no-cache","postman-token":"979b58f6-c028-434e-ac74-9572dcb5f6d3","user-agent":"PostmanRuntime/3.0.9","accept":"*/*","accept-encoding":"gzip, deflate"},"url":"http://echo.getpostman.com/get"}'
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: echo.getpostman.com/get copy copy
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false

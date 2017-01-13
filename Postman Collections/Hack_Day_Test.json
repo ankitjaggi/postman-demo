@@ -1,22 +1,301 @@
 {
+  "variables": [],
   "info": {
     "name": "Hack Day Test",
-    "_postman_id": "78e4f398-8679-d90c-b235-889e259bfbe2",
+    "_postman_id": "5665-78e4f398-8679-d90c-b235-889e259bfbe2",
     "description": "this is newer",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
     {
-      "_postman_id": "b802592b-a613-2c6c-6ca3-3c14d31203de",
+      "_postman_id": "5665-a68faaa1-39ed-22c1-1e2e-3aa8fca8b22d",
+      "name": "some folder",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "5665-2b5e83a5-ad6c-f6ae-60ea-925c89557808",
+      "name": "some folder copy",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "5665-b0672af1-98a5-b15e-4d14-db0ad69901ed",
+      "name": "some folder copy copy copy",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "5665-ed652edf-cc69-f062-6520-a340cd01a8f4",
+      "name": "some folder copy copy copy copy",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "5665-b802592b-a613-2c6c-6ca3-3c14d31203de",
       "name": "echo.getpostman.com/get copy",
       "request": {
         "url": "echo.getpostman.com/get",
         "method": "GET",
+        "header": [],
         "body": {
-          "mode": "formdata"
+          "mode": "formdata",
+          "formdata": []
         },
         "description": "blah blah\n"
-      }
+      },
+      "response": [
+        {
+          "id": "5665-20e77633-d2ca-445f-0844-425a10bdf6f0",
+          "name": "200",
+          "originalRequest": {
+            "url": "echo.getpostman.com/get",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "description": "blah blah\n"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "text",
+          "header": [
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "",
+              "name": "Access-Control-Allow-Credentials",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "",
+              "name": "Access-Control-Allow-Headers",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "",
+              "name": "Access-Control-Allow-Methods",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "",
+              "name": "Access-Control-Allow-Origin",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "",
+              "name": "Access-Control-Expose-Headers",
+              "description": ""
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "name": "Connection",
+              "description": ""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip",
+              "name": "Content-Encoding",
+              "description": ""
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8",
+              "name": "Content-Type",
+              "description": ""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 12 Jan 2017 09:02:19 GMT",
+              "name": "Date",
+              "description": ""
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\"",
+              "name": "ETag",
+              "description": ""
+            },
+            {
+              "key": "Server",
+              "value": "nginx/1.10.1",
+              "name": "Server",
+              "description": ""
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked",
+              "name": "Transfer-Encoding",
+              "description": ""
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding",
+              "name": "Vary",
+              "description": ""
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly",
+              "name": "set-cookie",
+              "description": ""
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Mon Jan 18 2038 21:44:07 GMT+0000 (UTC)",
+              "httpOnly": true,
+              "domain": "echo.getpostman.com",
+              "path": "/",
+              "secure": false,
+              "value": "s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY",
+              "key": "sails.sid"
+            }
+          ],
+          "responseTime": "968",
+          "body": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "5665-3f3e4eed-fb84-3cd7-3baa-ceda4489ab39",
+      "name": "echo.getpostman.com/get copy copy",
+      "request": {
+        "url": "echo.getpostman.com/get",
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "description": "blah blah\n"
+      },
+      "response": [
+        {
+          "id": "5665-4c0b7906-a23a-e663-263f-e378cfcb732e",
+          "name": "200",
+          "originalRequest": {
+            "url": "echo.getpostman.com/get",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "description": "blah blah\n"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "text",
+          "header": [
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "",
+              "name": "Access-Control-Allow-Credentials",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "",
+              "name": "Access-Control-Allow-Headers",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "",
+              "name": "Access-Control-Allow-Methods",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "",
+              "name": "Access-Control-Allow-Origin",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Expose-Headers",
+              "value": "",
+              "name": "Access-Control-Expose-Headers",
+              "description": ""
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "name": "Connection",
+              "description": ""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip",
+              "name": "Content-Encoding",
+              "description": ""
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8",
+              "name": "Content-Type",
+              "description": ""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 12 Jan 2017 09:02:19 GMT",
+              "name": "Date",
+              "description": ""
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"102-S8VFdGZP4Nc3us63AMj1VA\"",
+              "name": "ETag",
+              "description": ""
+            },
+            {
+              "key": "Server",
+              "value": "nginx/1.10.1",
+              "name": "Server",
+              "description": ""
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked",
+              "name": "Transfer-Encoding",
+              "description": ""
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding",
+              "name": "Vary",
+              "description": ""
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly",
+              "name": "set-cookie",
+              "description": ""
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Mon Jan 18 2038 21:44:07 GMT+0000 (UTC)",
+              "httpOnly": true,
+              "domain": "echo.getpostman.com",
+              "path": "/",
+              "secure": false,
+              "value": "s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY",
+              "key": "sails.sid"
+            }
+          ],
+          "responseTime": "968",
+          "body": "{\"args\":{},\"headers\":{\"host\":\"echo.getpostman.com\",\"cache-control\":\"no-cache\",\"postman-token\":\"979b58f6-c028-434e-ac74-9572dcb5f6d3\",\"user-agent\":\"PostmanRuntime/3.0.9\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\"},\"url\":\"http://echo.getpostman.com/get\"}"
+        }
+      ]
     }
   ]
 }

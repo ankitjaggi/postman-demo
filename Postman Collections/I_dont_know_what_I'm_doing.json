@@ -1,0 +1,23 @@
+{
+  "variables": [],
+  "info": {
+    "name": "I dont know what I'm doing",
+    "_postman_id": "137b5fe2-4c61-995c-baba-b9063b86564a",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "994431c0-dbb3-47ba-61dd-71e9325498d9",
+      "name": "https://api.getpostman.com/monitors",
+      "request": {
+        "url": "https://api.getpostman.com/monitors",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

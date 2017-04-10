@@ -14,10 +14,7 @@
         "url": "yumist.com",
         "method": "GET",
         "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
-        },
+        "body": {},
         "description": ""
       },
       "response": []

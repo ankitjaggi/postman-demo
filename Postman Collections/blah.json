@@ -1,255 +1,146 @@
 {
-  "swagger": "2.0",
+  "variables": [],
   "info": {
-    "version": "1.0",
-    "title": "blah",
-    "description": "TODO: Add Description",
-    "license": {
-      "name": "MIT",
-      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
-    }
+    "name": "blah",
+    "_postman_id": "f4da4144-ded5-ba12-bad0-35455bc241ac",
+    "description": "TODO: Add Description sgggdf fsdfsdvds fdgsdgsdgddsgsdgsdg sdsfgsdf xbdgdgc fgfddggdf dhdfhdrhg sdfdsf hfgjfj fdhgrtuy sdfsdfdfg",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "host": "example.com",
-  "basePath": "/",
-  "schemes": [
-    "http"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
-  "paths": {
-    "/get": {
-      "get": {
-        "description": "TODO: Add Description",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "httpbin.org/get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
+  "item": [
+    {
+      "_postman_id": "048ead83-7924-16c8-9fee-570b82217b99",
+      "name": "collections",
+      "description": "Folder for collections",
+      "item": [
+        {
+          "_postman_id": "18747b2c-da4b-dcd2-697a-e59b614c6753",
+          "name": "http://example.com/collections/:collection_uid?apikey={{apikey}}",
+          "request": {
+            "url": {
+              "raw": "http://example.com/collections/:collection_uid?apikey={{apikey}}",
+              "protocol": "http",
+              "auth": {},
+              "host": [
+                "example",
+                "com"
+              ],
+              "path": [
+                "collections",
+                ":collection_uid"
+              ],
+              "query": [
+                {
+                  "key": "apikey",
+                  "value": "{{apikey}}"
+                }
+              ],
+              "variable": [
+                {
+                  "value": "{{collection_uid}}",
+                  "id": "collection_uid"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "description": "TODO: Add Description"
+          },
+          "response": []
         },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/get"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "httpbin.org/get",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
+        {
+          "_postman_id": "b9be6f54-dd7b-4048-cc4d-01ed677740dd",
+          "name": "http://example.com/collections?apikey={{apikey}}",
+          "request": {
+            "url": "http://example.com/collections?apikey={{apikey}}",
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "description": "TODO: Add Description"
+          },
+          "response": []
         }
-      }
+      ]
     },
-    "/environments": {
-      "get": {
-        "description": "TODO: Add Description",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "GET Environment",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "X-Api-Key",
-            "in": "header",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/environments",
-              "headers": {
-                "X-Api-Key": "{{postman_api_key}}"
+    {
+      "_postman_id": "e8cfc1e7-bbf0-f400-d3a7-8e8ab5a0496a",
+      "name": "environments",
+      "description": "Folder for environments",
+      "item": [
+        {
+          "_postman_id": "4e3f84f6-d63e-55fe-171c-0b76cb3e1028",
+          "name": "http://example.com/environments",
+          "request": {
+            "url": "http://example.com/environments",
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Api-Key",
+                "value": "{{X-Api-Key}}",
+                "description": ""
               }
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "GET Environment",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/environments/{environment_uid}": {
-      "get": {
-        "description": "TODO: Add Description",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "GET Single Environment",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "apikey",
-            "in": "query",
-            "required": true,
-            "type": "string"
+            ],
+            "body": {},
+            "description": "TODO: Add Description"
           },
-          {
-            "name": "environment_uid",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
+          "response": []
         },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/collections/{collection_uid}": {
-      "get": {
-        "description": "TODO: Add Description",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "GET Single Collection",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "apikey",
-            "in": "query",
-            "required": true,
-            "type": "string"
+        {
+          "_postman_id": "064e5c48-699b-ce4c-2942-528e7451b538",
+          "name": "http://example.com/environments/:environment_uid?apikey={{apikey}}",
+          "request": {
+            "url": {
+              "raw": "http://example.com/environments/:environment_uid?apikey={{apikey}}",
+              "protocol": "http",
+              "auth": {},
+              "host": [
+                "example",
+                "com"
+              ],
+              "path": [
+                "environments",
+                ":environment_uid"
+              ],
+              "query": [
+                {
+                  "key": "apikey",
+                  "value": "{{apikey}}"
+                }
+              ],
+              "variable": [
+                {
+                  "value": "{{environment_uid}}",
+                  "id": "environment_uid"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "description": "TODO: Add Description"
           },
-          {
-            "name": "collection_uid",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
+          "response": []
         }
-      }
+      ]
     },
-    "/collections": {
-      "get": {
-        "description": "TODO: Add Description",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "GET Collections",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "apikey",
-            "in": "query",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/collections?apikey={{api_key}}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "GET Collections",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
+    {
+      "_postman_id": "d8e7b10e-68c6-aab6-cb49-ee9b23827941",
+      "name": "get",
+      "description": "Folder for get",
+      "item": [
+        {
+          "_postman_id": "585bd9e0-f259-67cb-86b6-538af031b8ac",
+          "name": "http://example.com/get",
+          "request": {
+            "url": "http://example.com/get",
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "description": "TODO: Add Description"
+          },
+          "response": []
         }
-      }
+      ]
     }
-  }
+  ]
 }

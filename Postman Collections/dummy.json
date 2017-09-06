@@ -1,0 +1,516 @@
+{
+  "variables": [],
+  "info": {
+    "name": "dummy",
+    "_postman_id": "3ce352de-d7e4-aa68-d670-24f93259cd9d",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "b49852ed-692a-20aa-f6ba-b78e686b290b",
+      "name": "ABC",
+      "description": "andsmdmnasmd",
+      "item": [
+        {
+          "_postman_id": "637cbc0b-1499-f48f-341d-853433c61972",
+          "name": "asasd.com",
+          "request": {
+            "url": "asasd.com",
+            "method": "POST",
+            "header": [],
+            "body": {},
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "52a5b058-5c9b-e7ac-b5b0-9429a9189c8e",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "ef5f9dfa-0f7a-2839-233f-8b80b84c26d1",
+      "name": "google.com",
+      "request": {
+        "url": "news.ycombinator.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "16ef4d03-e324-d216-d7ec-534fa63354e6",
+      "name": "google.com",
+      "request": {
+        "url": "ycombinator.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "1c257b3e-137d-f0c9-9483-c3ea8a82bdf9",
+      "name": "hackernews",
+      "request": {
+        "url": "ycombinator.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "37fb339d-9b95-56c5-2688-49373a6e04d8",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "5bdcafa9-c2c1-4078-0415-6276b8cdddf4",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "1a03fa40-e295-1a49-2b0f-bf7dcce5fed5",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "783a5cef-6ef4-fbcc-6d10-bee6a48db8a5",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "d065af52-2e44-f5f5-c385-25b9407e0450",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "c2f17f27-0210-4057-1601-1a5c5864d00c",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "cfd038c1-74c3-949a-dcfd-1ca66d53a0c2",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "bf328f09-4b56-4d38-ae5d-7facb13983fc",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "1e3b762d-cab0-8fad-b5c3-71eb3116f68b",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "76dfe1df-a8c1-8643-dd33-712c0d85ed9d",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "aa1282d9-835b-b230-417b-2a7b26360f3c",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "2fd55832-809c-71d2-178f-c0b47ce6b777",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f46b2733-a59c-14c2-3430-414823f3bea2",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "239b953a-d67c-95f4-58ea-69fd738de1ca",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "7591ea6f-4f13-61d0-f841-059ef483c1d9",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "74cdacfe-3bcf-af2c-ce72-f895aac6c94f",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "7bf8665f-0ca4-2b78-c08e-0be88c829749",
+      "name": "https://getpostman.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 10;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://getpostman.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

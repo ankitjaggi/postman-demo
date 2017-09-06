@@ -1,0 +1,337 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Hack Day Test
+  description: 'TODO: Add Description'
+  license:
+    name: MIT
+    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
+host: postman-echo.com
+basePath: /
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /post:
+    post:
+      description: 'TODO: Add Description'
+      summary: Echo
+      tags:
+      - Misc
+      operationId: Echo1
+      produces:
+      - application/json
+      parameters:
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/EchoResponse3'
+          examples:
+            application/json:
+              args: {}
+              headers:
+                host: echo.getpostman.com
+                cache-control: no-cache
+                postman-token: 979b58f6-c028-434e-ac74-9572dcb5f6d3
+                user-agent: PostmanRuntime/3.0.9
+                accept: '*/*'
+                accept-encoding: gzip, deflate
+              url: http://echo.getpostman.com/get
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /post
+          headers:
+            Content-Type: application/json
+            Accept: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: RAW
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers:
+            Access-Control-Allow-Credentials: ''
+            Access-Control-Allow-Headers: ''
+            Access-Control-Allow-Methods: ''
+            Access-Control-Allow-Origin: ''
+            Access-Control-Expose-Headers: ''
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Type: application/json; charset=utf-8
+            Date: Thu, 12 Jan 2017 09:02:19 GMT
+            ETag: W/"102-S8VFdGZP4Nc3us63AMj1VA"
+            Server: nginx/1.10.1
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            set-cookie: sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly
+          body: '{"args":{},"headers":{"host":"echo.getpostman.com","cache-control":"no-cache","postman-token":"979b58f6-c028-434e-ac74-9572dcb5f6d3","user-agent":"PostmanRuntime/3.0.9","accept":"*/*","accept-encoding":"gzip, deflate"},"url":"http://echo.getpostman.com/get"}'
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Echo
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /get:
+    get:
+      description: 'TODO: Add Description'
+      summary: Echo 2
+      tags:
+      - Misc
+      operationId: Echo 2
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        200:
+          description: ''
+          schema:
+            $ref: '#/definitions/Echo2response'
+          examples:
+            application/json:
+              args: {}
+              headers:
+                host: echo.getpostman.com
+                cache-control: no-cache
+                postman-token: 979b58f6-c028-434e-ac74-9572dcb5f6d3
+                user-agent: PostmanRuntime/3.0.9
+                accept: '*/*'
+                accept-encoding: gzip, deflate
+              url: http://echo.getpostman.com/get
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /get
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: RAW
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers:
+            Access-Control-Allow-Credentials: ''
+            Access-Control-Allow-Headers: ''
+            Access-Control-Allow-Methods: ''
+            Access-Control-Allow-Origin: ''
+            Access-Control-Expose-Headers: ''
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Type: application/json; charset=utf-8
+            Date: Thu, 12 Jan 2017 09:02:19 GMT
+            ETag: W/"102-S8VFdGZP4Nc3us63AMj1VA"
+            Server: nginx/1.10.1
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            set-cookie: sails.sid=s%3ASATymbWGJPUr44gz9tk5Nqxu_Ds8ILwr.NT28QAJ0M9yJFBNJVDqcffP2LcqTl6zndxkT0x%2FMOrY; Path=/; HttpOnly
+          body: '{"args":{},"headers":{"host":"echo.getpostman.com","cache-control":"no-cache","postman-token":"979b58f6-c028-434e-ac74-9572dcb5f6d3","user-agent":"PostmanRuntime/3.0.9","accept":"*/*","accept-encoding":"gzip, deflate"},"url":"http://echo.getpostman.com/get"}'
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Echo 2
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+definitions:
+  EchoResponse:
+    title: EchoResponse
+    type: object
+    properties:
+      args:
+        description: ''
+        type: object
+      data:
+        description: ''
+        type: object
+      files:
+        description: ''
+        type: object
+      form:
+        $ref: '#/definitions/Form'
+      headers:
+        $ref: '#/definitions/Headers'
+      json:
+        description: ''
+        type: string
+      url:
+        description: ''
+        type: string
+    required:
+    - args
+    - data
+    - files
+    - form
+    - headers
+    - json
+    - url
+  Form:
+    title: Form
+    type: object
+    properties:
+      variable1:
+        description: ''
+        type: string
+      name:
+        description: ''
+        type: string
+      long:
+        description: ''
+        type: string
+      new_variable:
+        description: ''
+        type: string
+    required:
+    - variable1
+    - name
+    - long
+    - new_variable
+  Headers:
+    title: Headers
+    type: object
+    properties:
+      host:
+        description: ''
+        type: string
+      content-length:
+        description: ''
+        type: string
+      accept:
+        description: ''
+        type: string
+      accept-encoding:
+        description: ''
+        type: string
+      cache-control:
+        description: ''
+        type: string
+      content-type:
+        description: ''
+        type: string
+      cookie:
+        description: ''
+        type: string
+      postman-token:
+        description: ''
+        type: string
+      user-agent:
+        description: ''
+        type: string
+      x-forwarded-port:
+        description: ''
+        type: string
+      x-forwarded-proto:
+        description: ''
+        type: string
+    required:
+    - host
+    - content-length
+    - accept
+    - accept-encoding
+    - cache-control
+    - content-type
+    - cookie
+    - postman-token
+    - user-agent
+    - x-forwarded-port
+    - x-forwarded-proto
+  EchoResponse3:
+    title: EchoResponse3
+    example:
+      args: {}
+      headers:
+        host: echo.getpostman.com
+        cache-control: no-cache
+        postman-token: 979b58f6-c028-434e-ac74-9572dcb5f6d3
+        user-agent: PostmanRuntime/3.0.9
+        accept: '*/*'
+        accept-encoding: gzip, deflate
+      url: http://echo.getpostman.com/get
+    type: object
+    properties:
+      args:
+        description: ''
+        type: object
+      headers:
+        $ref: '#/definitions/Headers4'
+      url:
+        description: ''
+        type: string
+    required:
+    - args
+    - headers
+    - url
+  Headers4:
+    title: Headers4
+    type: object
+    properties:
+      host:
+        description: ''
+        type: string
+      cache-control:
+        description: ''
+        type: string
+      postman-token:
+        description: ''
+        type: string
+      user-agent:
+        description: ''
+        type: string
+      accept:
+        description: ''
+        type: string
+      accept-encoding:
+        description: ''
+        type: string
+    required:
+    - host
+    - cache-control
+    - postman-token
+    - user-agent
+    - accept
+    - accept-encoding
+  Echo2response:
+    title: Echo 2Response
+    example:
+      args: {}
+      headers:
+        host: echo.getpostman.com
+        cache-control: no-cache
+        postman-token: 979b58f6-c028-434e-ac74-9572dcb5f6d3
+        user-agent: PostmanRuntime/3.0.9
+        accept: '*/*'
+        accept-encoding: gzip, deflate
+      url: http://echo.getpostman.com/get
+    type: object
+    properties:
+      args:
+        description: ''
+        type: object
+      headers:
+        $ref: '#/definitions/Headers4'
+      url:
+        description: ''
+        type: string
+    required:
+    - args
+    - headers
+    - url

@@ -1,0 +1,34 @@
+{
+  "variables": [],
+  "info": {
+    "name": "justiceleague",
+    "_postman_id": "534451cc-464a-adbe-6327-feb4886e8b50",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "7dc42528-a8fb-2ad7-f3c4-493dbd2ee209",
+      "name": "https://arpitjain.com",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://arpitjain.com",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

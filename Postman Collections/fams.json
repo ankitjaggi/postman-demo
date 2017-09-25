@@ -1,0 +1,125 @@
+{
+  "variables": [],
+  "info": {
+    "name": "fams",
+    "_postman_id": "4b2eea69-7b44-5f37-0fe4-230e00853d98",
+    "description": "hello moto blah blah afbdfnvmvvjbkjff",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "7ceecbdc-af54-971b-7e12-7d71e802304c",
+      "name": "Test Folder",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "d9472504-cd50-0013-f46d-700f0a35cff0",
+      "name": "bleh",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "49e3f19e-ee01-71e8-ba7e-0771f50494d5",
+      "name": "Postman Echo GET",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://postman-echo.com/get",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "c917f190-3708-8bb5-e9a2-e8ec3c330250",
+      "name": "Postman Echo GET copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://postman-echo.com/get",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "7a40640d-5bd2-501e-1a07-8126d5bca81e",
+      "name": "https://postman-echo.com/get?a=b&c=d&e=f&g=h&z=x",
+      "request": {
+        "url": {
+          "raw": "https://postman-echo.com/get?a=b&c=d&e=f&g=h&z=x",
+          "protocol": "https",
+          "auth": {},
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "a",
+              "value": "b",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "c",
+              "value": "d",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "e",
+              "value": "f",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "g",
+              "value": "h",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "z",
+              "value": "x",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

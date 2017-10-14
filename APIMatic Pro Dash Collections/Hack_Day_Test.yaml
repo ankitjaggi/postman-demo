@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: Hack Day Test
-  description: THis is a desc
+  description: THis is a descdm skdsd
   license:
     name: MIT
     url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT

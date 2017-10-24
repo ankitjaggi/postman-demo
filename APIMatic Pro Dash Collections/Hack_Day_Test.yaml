@@ -155,6 +155,29 @@ paths:
 definitions:
   EchoResponse:
     title: EchoResponse
+    example:
+      args: {}
+      data: {}
+      files: {}
+      form:
+        variable1: value1
+        name: godfrzero
+        long: description
+        new_variable: new_value
+      headers:
+        host: postman-echo.com
+        content-length: 516
+        accept: '*/*'
+        accept-encoding: gzip, deflate
+        cache-control: no-cache
+        content-type: multipart/form-data; boundary=--------------------------991386967283567640222926
+        cookie: sails.sid=s%3AAcdZaep3c8qlWvkkZoVUR1XXLKqoi1dl.g55ZfamIN0MMEKlV34ehGLGpxgTjkcd%2B%2FucVubCHwhQ
+        postman-token: ef6b3cfa-ef0b-455d-9c07-23473cda21e8
+        user-agent: PostmanRuntime/6.1.6
+        x-forwarded-port: 443
+        x-forwarded-proto: https
+      json: null
+      url: https://postman-echo.com/post
     type: object
     properties:
       args:

@@ -1,0 +1,240 @@
+{
+  "variables": [],
+  "info": {
+    "name": "fams-123",
+    "_postman_id": "4b2eea69-7b44-5f37-0fe4-230e00853d98",
+    "description": "hello moto blah blah afbdfnvmvvjbkjffanfmdf",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "7ceecbdc-af54-971b-7e12-7d71e802304c",
+      "name": "Test Folder",
+      "description": "",
+      "item": []
+    },
+    {
+      "_postman_id": "d9472504-cd50-0013-f46d-700f0a35cff0",
+      "name": "bleh",
+      "description": "test desc 123456",
+      "item": [
+        {
+          "_postman_id": "f62fc6ec-10f6-3b1f-2ad3-af1fa888ccf3",
+          "name": "folder1",
+          "description": "",
+          "item": [
+            {
+              "_postman_id": "49e3f19e-ee01-71e8-ba7e-0771f50494d5",
+              "name": "Postman Echo GET",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "type": "text/javascript",
+                    "exec": [
+                      "tests[\"Status code is 200\"] = responseCode.code === 200;"
+                    ]
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "https://postman-echo.com/get",
+                "description": ""
+              },
+              "response": [
+                {
+                  "id": "9bbaf880-47be-7239-58b0-93545e67199e",
+                  "name": "Postman echoget 12 345",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {},
+                    "url": "https://postman-echo.com/get"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Credentials",
+                      "value": "",
+                      "name": "Access-Control-Allow-Credentials",
+                      "description": ""
+                    },
+                    {
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "",
+                      "name": "Access-Control-Allow-Headers",
+                      "description": ""
+                    },
+                    {
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "",
+                      "name": "Access-Control-Allow-Methods",
+                      "description": ""
+                    },
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "",
+                      "name": "Access-Control-Allow-Origin",
+                      "description": ""
+                    },
+                    {
+                      "key": "Access-Control-Expose-Headers",
+                      "value": "",
+                      "name": "Access-Control-Expose-Headers",
+                      "description": ""
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "name": "Connection",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip",
+                      "name": "Content-Encoding",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "317",
+                      "name": "Content-Length",
+                      "description": ""
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8",
+                      "name": "Content-Type",
+                      "description": ""
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 17 Oct 2017 10:28:28 GMT",
+                      "name": "Date",
+                      "description": ""
+                    },
+                    {
+                      "key": "ETag",
+                      "value": "W/\"198-pPRI3BbC8AvGougt7Qy0eA\"",
+                      "name": "ETag",
+                      "description": ""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx/1.10.2",
+                      "name": "Server",
+                      "description": ""
+                    },
+                    {
+                      "key": "Vary",
+                      "value": "Accept-Encoding",
+                      "name": "Vary",
+                      "description": ""
+                    },
+                    {
+                      "key": "set-cookie",
+                      "value": "sails.sid=s%3AFJkYeyyNk2QUGrmLJxvYkJaZKhH5UO9c.iuILaSNFg%2Bt9tylyf8ygsZaqe4vQBaMkEQCohFfSad8; Path=/; HttpOnly",
+                      "name": "set-cookie",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [
+                    {
+                      "expires": "Tue Jan 19 2038 03:14:07 GMT+0000 (UTC)",
+                      "httpOnly": true,
+                      "domain": "postman-echo.com",
+                      "path": "/",
+                      "secure": false,
+                      "value": "s%3AFJkYeyyNk2QUGrmLJxvYkJaZKhH5UO9c.iuILaSNFg%2Bt9tylyf8ygsZaqe4vQBaMkEQCohFfSad8",
+                      "key": "sails.sid"
+                    }
+                  ],
+                  "responseTime": "2164",
+                  "body": "{\"args\":{},\"headers\":{\"host\":\"postman-echo.com\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\",\"cache-control\":\"no-cache\",\"cookie\":\"sails.sid=s%3AwV_-pBiLnhev42ucNNf0vyKGqKXGtF72.eeGUDVefIHaSE2WTGJC6wcbwPxtIcbNeGXcPREYUzBk\",\"postman-token\":\"73ff038d-8f0c-4602-b77a-8eb6d05148c9\",\"user-agent\":\"PostmanRuntime/6.4.1\",\"x-forwarded-port\":\"443\",\"x-forwarded-proto\":\"https\"},\"url\":\"https://postman-echo.com/get\"}"
+                }
+              ]
+            }
+          ],
+          "_postman_isSubFolder": true
+        }
+      ]
+    },
+    {
+      "_postman_id": "c917f190-3708-8bb5-e9a2-e8ec3c330250",
+      "name": "Postman Echo GET copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": "https://postman-echo.com/get",
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "7a40640d-5bd2-501e-1a07-8126d5bca81e",
+      "name": "https://postman-echo.com/get?a=b&c=d&e=f&g=h&z=x",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "https://postman-echo.com/get?a=b&c=d&e=f&g=h&z=x",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "a",
+              "value": "b",
+              "equals": true
+            },
+            {
+              "key": "c",
+              "value": "d",
+              "equals": true
+            },
+            {
+              "key": "e",
+              "value": "f",
+              "equals": true
+            },
+            {
+              "key": "g",
+              "value": "h",
+              "equals": true
+            },
+            {
+              "key": "z",
+              "value": "x",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

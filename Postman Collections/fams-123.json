@@ -175,7 +175,9 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "console.log(pm.globals.get('something'));"
             ]
           }
         }

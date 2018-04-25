@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "3c8ffeb2-bc04-4b5f-b30d-d21ada32b496",
+    "name": "lolololol",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "09ca657f-8394-4d1b-9429-467eb3251d40",
+      "name": "Create User",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"{{env_id}}\",\n\t\"name\": \"some name\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:1337/api/environment?user_id={{owner}}&access_token=xyz{{owner}}&identifier=collection_apimatic_github",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1337",
+          "path": [
+            "api",
+            "environment"
+          ],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "{{owner}}",
+              "equals": true
+            },
+            {
+              "key": "access_token",
+              "value": "xyz{{owner}}",
+              "equals": true
+            },
+            {
+              "key": "identifier",
+              "value": "collection_apimatic_github",
+              "equals": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

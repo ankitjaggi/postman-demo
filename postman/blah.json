@@ -1,0 +1,500 @@
+{
+  "info": {
+    "_postman_id": "a79f29fc-9277-37aa-9c84-3f7aacb150a6",
+    "name": "blah",
+    "description": "yes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "0badc74e-64a2-9c77-e5ca-df21a826bd01",
+      "name": "Dummy Folder 2",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "c574112c-b124-cc23-4b84-433c3738f35e",
+          "name": "this is a duplicated request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "httpbin.org/get?new=world",
+              "host": [
+                "httpbin",
+                "org"
+              ],
+              "path": [
+                "get"
+              ],
+              "query": [
+                {
+                  "key": "new",
+                  "value": "world",
+                  "equals": true,
+                  "description": "new world is a desc"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2ff31bad-6b49-eac4-2948-0c3258194059",
+              "name": "lols",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "httpbin.org/get"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "name": "Access-Control-Allow-Credentials",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "264",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 18 May 2017 13:14:21 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "meinheld/0.6.1",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 vegur",
+                  "name": "Via",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Flask",
+                  "name": "X-Powered-By",
+                  "description": ""
+                },
+                {
+                  "key": "X-Processed-Time",
+                  "value": "0.0113220214844",
+                  "name": "X-Processed-Time",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "861",
+              "body": "{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Connection\": \"close\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"PostmanRuntime/6.1.6\"\n  }, \n  \"origin\": \"106.51.70.154\", \n  \"url\": \"http://httpbin.org/get\"\n}\n"
+            }
+          ]
+        },
+        {
+          "_postman_id": "46279350-ef60-0ee4-f285-68168292ae8b",
+          "name": "https://www.yahoo.com",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "https://www.yahoo.com"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "d80d7687-1074-0285-47b4-bbdd642e51a4",
+      "name": "Dummy Folder",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "b4b202e7-957c-a3a6-e650-e235f5c76c58",
+          "name": "Dummy folder 3",
+          "description": "",
+          "item": [
+            {
+              "_postman_id": "39d99ab3-ba72-b599-5a41-277a1b2e34d2",
+              "name": "GET Single Environment",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "localhost:8080/environments/{{environment_uid}}?apikey=e102fb437c37494788790996df37440d",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "environments",
+                    "{{environment_uid}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "apikey",
+                      "value": "e102fb437c37494788790996df37440d"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
+          "_postman_id": "236ee252-6eb1-786d-0a2e-f7a757cf990d",
+          "name": "GET Collections",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "localhost:8080/collections?apikey={{api_key}}",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "collections"
+              ],
+              "query": [
+                {
+                  "key": "apikey",
+                  "value": "{{api_key}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "e54b7f43-cfbd-3021-639d-163df13ccc63",
+      "name": "Dummy Folder 2 copy",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "5285476d-8065-cc3d-907b-ee3b5cb5e26e",
+          "name": "this is a duplicated request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "httpbin.org/get?new=world",
+              "host": [
+                "httpbin",
+                "org"
+              ],
+              "path": [
+                "get"
+              ],
+              "query": [
+                {
+                  "key": "new",
+                  "value": "world",
+                  "equals": true,
+                  "description": "new world is a desc"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "837225ed-9ddf-b7ca-e78d-781612e72465",
+              "name": "lols",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "httpbin.org/get"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "name": "Access-Control-Allow-Credentials",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "264",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 18 May 2017 13:14:21 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "meinheld/0.6.1",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Via",
+                  "value": "1.1 vegur",
+                  "name": "Via",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Flask",
+                  "name": "X-Powered-By",
+                  "description": ""
+                },
+                {
+                  "key": "X-Processed-Time",
+                  "value": "0.0113220214844",
+                  "name": "X-Processed-Time",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "861",
+              "body": "{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Connection\": \"close\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"PostmanRuntime/6.1.6\"\n  }, \n  \"origin\": \"106.51.70.154\", \n  \"url\": \"http://httpbin.org/get\"\n}\n"
+            }
+          ]
+        },
+        {
+          "_postman_id": "263a714f-86d2-999b-7f3c-513950767479",
+          "name": "https://www.yahoo.com",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "https://www.yahoo.com"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "38f28808-1120-b11d-a6a9-6d515a55adc7",
+      "name": "httpbin.org/get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "httpbin.org/get?new=world",
+          "host": [
+            "httpbin",
+            "org"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "new",
+              "value": "world",
+              "equals": true,
+              "description": "new world is a desc"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "cacee085-2ed3-5747-a49e-1efa597d947d",
+          "name": "lols",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "httpbin.org/get"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true",
+              "name": "Access-Control-Allow-Credentials",
+              "description": ""
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*",
+              "name": "Access-Control-Allow-Origin",
+              "description": ""
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "name": "Connection",
+              "description": ""
+            },
+            {
+              "key": "Content-Length",
+              "value": "264",
+              "name": "Content-Length",
+              "description": ""
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "name": "Content-Type",
+              "description": ""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 18 May 2017 13:14:21 GMT",
+              "name": "Date",
+              "description": ""
+            },
+            {
+              "key": "Server",
+              "value": "meinheld/0.6.1",
+              "name": "Server",
+              "description": ""
+            },
+            {
+              "key": "Via",
+              "value": "1.1 vegur",
+              "name": "Via",
+              "description": ""
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Flask",
+              "name": "X-Powered-By",
+              "description": ""
+            },
+            {
+              "key": "X-Processed-Time",
+              "value": "0.0113220214844",
+              "name": "X-Processed-Time",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "861",
+          "body": "{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Connection\": \"close\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"PostmanRuntime/6.1.6\"\n  }, \n  \"origin\": \"106.51.70.154\", \n  \"url\": \"http://httpbin.org/get\"\n}\n"
+        }
+      ]
+    },
+    {
+      "_postman_id": "8a461ee6-69ac-f48c-8928-d4285911de0c",
+      "name": "GET Environment",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-Api-Key",
+            "value": "{{postman_api_key}}"
+          }
+        ],
+        "body": {},
+        "url": "localhost:8080/environments"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "9022c677-42ae-6bf0-4b67-479e369ca5cb",
+      "name": "GET Single Collection",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "localhost:8080/collections/{{collection_uid}}?apikey={{postman_api_key}}",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "collections",
+            "{{collection_uid}}"
+          ],
+          "query": [
+            {
+              "key": "apikey",
+              "value": "{{postman_api_key}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "39192a8c-e372-411f-abb5-01f3cde0d8d3",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "bf2cb688-6fde-41b2-a9a5-7a16288f129e",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

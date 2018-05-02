@@ -1,0 +1,44 @@
+{
+  "info": {
+    "_postman_id": "0eff881a-8e9e-4ab3-b362-069834456d56",
+    "name": "El Puerto del Lobo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "208bfcef-c6a9-4df3-8f27-6855ba7e1022",
+      "name": "Captain Joseph Claw",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "8c1d5fd3-b560-44f8-8c99-f96fa431a40f",
+          "name": "Claw",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "https://postman-echo.com/get?query={{dummy}}",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "get"
+              ],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "{{dummy}}",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

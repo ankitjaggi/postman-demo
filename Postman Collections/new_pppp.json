@@ -1,0 +1,23 @@
+{
+  "info": {
+    "_postman_id": "001d2380-3727-4b74-aaa5-23a025b9a753",
+    "name": "new pppp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "c708cdf2-6465-4393-889c-5686a8fe050a",
+      "name": "this is a new request",
+      "request": {
+        "method": null,
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": null
+      },
+      "response": []
+    }
+  ]
+}

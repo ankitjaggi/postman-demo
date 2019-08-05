@@ -1,0 +1,22 @@
+{
+  "info": {
+    "_postman_id": "5665-ced39fab-2d61-4fd9-bc55-b4a71f9129b6",
+    "name": "C1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "wfwfdfe",
+      "_postman_id": "5665-1a56d02e-ca96-44a7-8fb0-ee078193172d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
+    }
+  ]
+}

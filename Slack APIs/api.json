@@ -2,28 +2,7 @@
     "basePath": "/api",
     "definitions": {
        tems": {
-                                "$ref": "#/definitions/defs_team"
-                            },
-                            "minItems": 0,
-                            "type": "array",
-                            "uniqueItems": true
-                        },
-                        "shares": {
-                            "items": {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "accepted_user": {
-                                        "$ref": "#/definitions/defs_user_id"
-                                    },
-                                    "is_active": {
-                                        "type": "boolean"
-                                    },
-                                    "team": {
-                                        "$ref": "#/definitions/objs_team"
-                                    },
-                                    "user": {
-                                        "$ref": "#/definitions/defs_user_id"
-                                    }
+                               }
                                 },
                                 "required": [
                                     "team",

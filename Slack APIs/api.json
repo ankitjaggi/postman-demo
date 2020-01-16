@@ -2644,6 +2644,461 @@
         "version": "1.2.0"
     },
     "paths": {
+        "/apps.permissions.users.request": {
+            "get": {
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "description": "Enables an app to trigger a permissions modal to grant an app access to a user access scope.",
+                "externalDocs": {
+                    "description": "API method documentation",
+                    "url": "https://api.slack.com/methods/apps.permissions.users.request"
+                },
+                "operationId": "apps_permissions_users_request",
+                "parameters": [
+                    {
+                        "description": "A comma separated list of user scopes to request for",
+                        "in": "query",
+                        "name": "scopes",
+                        "type": "string"
+                    },
+                    {
+                        "description": "Authentication token. Requires scope: `none`",
+                        "in": "query",
+                        "name": "token",
+                        "type": "string"
+                    },
+                    {
+                        "description": "The user this scope is being requested for",
+                        "in": "query",
+                        "name": "user",
+                        "type": "string"
+                    },
+                    {
+                        "description": "Token used to trigger the request",
+                        "in": "query",
+                        "name": "trigger_id",
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Standard success response when used with a user token",
+                        "examples": {
+                            "application/json": {
+                                "ok": true
+                            }
+                        },
+                        "schema": {
+                            "description": "Verbose schema not yet ready for this method.",
+                            "properties": {
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_true"
+                                }
+                            },
+                            "required": [
+                                "ok"
+                            ],
+                            "title": "Default success template",
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Standard failure response when trigger_id is invalid",
+                        "examples": {
+                            "application/json": {
+                                "error": "invalid_trigger_id",
+                                "ok": false
+                            }
+                        },
+                        "schema": {
+                            "description": "Verbose schema not yet ready for this method.",
+                            "properties": {
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_true"
+                                }
+                            },
+                            "required": [
+                                "ok"
+                            ],
+                            "title": "Default error template",
+                            "type": "object"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "slackAuth": [
+                            "none"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "apps.permissions.users",
+                    "apps"
+                ]
+            }
+        },
+        "/apps.uninstall": {
+            "get": {
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "description": "Uninstalls your app from a workspace.",
+                "externalDocs": {
+                    "description": "API method documentation",
+                    "url": "https://api.slack.com/methods/apps.uninstall"
+                },
+                "operationId": "apps_uninstall",
+                "parameters": [
+                    {
+                        "description": "Issued when you created your application.",
+                        "in": "query",
+                        "name": "client_secret",
+                        "type": "string"
+                    },
+                    {
+                        "description": "Authentication token. Requires scope: `none`",
+                        "in": "query",
+                        "name": "token",
+                        "type": "string"
+                    },
+                    {
+                        "description": "Issued when you created your application.",
+                        "in": "query",
+                        "name": "client_id",
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Typical success response",
+                        "examples": {
+                            "application/json": {
+                                "ok": true
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for successful response from apps.uninstall method",
+                            "properties": {
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_true"
+                                }
+                            },
+                            "required": [
+                                "ok"
+                            ],
+                            "title": "apps.uninstall schema",
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Typical error response",
+                        "examples": {
+                            "application/json": {
+                                "error": "invalid_auth",
+                                "ok": false
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for error response from apps.uninstall method",
+                            "properties": {
+                                "error": {
+                                    "enum": [
+                                        "invalid_client_id",
+                                        "bad_client_secret",
+                                        "client_id_token_mismatch",
+                                        "not_authed",
+                                        "invalid_auth",
+                                        "account_inactive",
+                                        "token_revoked",
+                                        "no_permission",
+                                        "org_login_required",
+                                        "user_is_bot",
+                                        "invalid_arg_name",
+                                        "invalid_array_arg",
+                                        "invalid_charset",
+                                        "invalid_form_data",
+                                        "invalid_post_type",
+                                        "missing_post_type",
+                                        "team_added_to_org",
+                                        "invalid_json",
+                                        "json_not_object",
+                                        "request_timeout",
+                                        "upgrade_required",
+                                        "fatal_error"
+                                    ],
+                                    "type": "string"
+                                },
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_false"
+                                }
+                            },
+                            "required": [
+                                "ok",
+                                "error"
+                            ],
+                            "title": "apps.uninstall error schema",
+                            "type": "object"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "slackAuth": [
+                            "none"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "apps"
+                ]
+            }
+        },
+        "/auth.revoke": {
+            "get": {
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "description": "Revokes a token.",
+                "externalDocs": {
+                    "description": "API method documentation",
+                    "url": "https://api.slack.com/methods/auth.revoke"
+                },
+                "operationId": "auth_revoke",
+                "parameters": [
+                    {
+                        "description": "Setting this parameter to `1` triggers a _testing mode_ where the specified token will not actually be revoked.",
+                        "in": "query",
+                        "name": "test",
+                        "type": "boolean"
+                    },
+                    {
+                        "description": "Authentication token. Requires scope: `none`",
+                        "in": "query",
+                        "name": "token",
+                        "type": "string"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Typical success response",
+                        "examples": {
+                            "application/json": {
+                                "ok": true,
+                                "revoked": true
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for successful response from auth.revoke method",
+                            "properties": {
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_true"
+                                },
+                                "revoked": {
+                                    "type": "boolean"
+                                }
+                            },
+                            "required": [
+                                "ok",
+                                "revoked"
+                            ],
+                            "title": "auth.revoke schema",
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Typical error response",
+                        "examples": {
+                            "application/json": {
+                                "error": "invalid_auth",
+                                "ok": false
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for error response from auth.revoke method",
+                            "properties": {
+                                "error": {
+                                    "enum": [
+                                        "not_authed",
+                                        "invalid_auth",
+                                        "account_inactive",
+                                        "token_revoked",
+                                        "no_permission",
+                                        "org_login_required",
+                                        "invalid_arg_name",
+                                        "invalid_array_arg",
+                                        "invalid_charset",
+                                        "invalid_form_data",
+                                        "invalid_post_type",
+                                        "missing_post_type",
+                                        "team_added_to_org",
+                                        "invalid_json",
+                                        "json_not_object",
+                                        "request_timeout",
+                                        "upgrade_required",
+                                        "fatal_error"
+                                    ],
+                                    "type": "string"
+                                },
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_false"
+                                }
+                            },
+                            "required": [
+                                "ok",
+                                "error"
+                            ],
+                            "title": "auth.revoke error schema",
+                            "type": "object"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "slackAuth": [
+                            "none"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "auth"
+                ]
+            }
+        },
+        "/auth.test": {
+            "get": {
+                "consumes": [
+                    "application/x-www-form-urlencoded",
+                    "application/json"
+                ],
+                "description": "Checks authentication & identity.",
+                "externalDocs": {
+                    "description": "API method documentation",
+                    "url": "https://api.slack.com/methods/auth.test"
+                },
+                "operationId": "auth_test",
+                "parameters": [],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Standard success response when used with a user token",
+                        "examples": {
+                            "application/json": {
+                                "ok": true,
+                                "team": "Subarachnoid Workspace",
+                                "team_id": "T12345678",
+                                "url": "https://subarachnoid.slack.com/",
+                                "user": "grace",
+                                "user_id": "W12345678"
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for successful response auth.test method",
+                            "properties": {
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_true"
+                                },
+                                "team": {
+                                    "type": "string"
+                                },
+                                "team_id": {
+                                    "$ref": "#/definitions/defs_team"
+                                },
+                                "url": {
+                                    "type": "string"
+                                },
+                                "user": {
+                                    "type": "string"
+                                },
+                                "user_id": {
+                                    "$ref": "#/definitions/defs_user_id"
+                                }
+                            },
+                            "required": [
+                                "ok",
+                                "url",
+                                "team",
+                                "user",
+                                "team_id",
+                                "user_id"
+                            ],
+                            "title": "auth.test success schema",
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "Standard failure response when used with an invalid token",
+                        "examples": {
+                            "application/json": {
+                                "error": "invalid_auth",
+                                "ok": false
+                            }
+                        },
+                        "schema": {
+                            "additionalProperties": false,
+                            "description": "Schema for error response auth.test method",
+                            "properties": {
+                                "error": {
+                                    "enum": [
+                                        "not_authed",
+                                        "invalid_auth",
+                                        "token_revoked",
+                                        "account_inactive",
+                                        "invalid_arg_name",
+                                        "invalid_array_arg",
+                                        "invalid_charset",
+                                        "invalid_form_data",
+                                        "invalid_post_type",
+                                        "missing_post_type",
+                                        "invalid_json",
+                                        "json_not_object",
+                                        "request_timeout",
+                                        "upgrade_required"
+                                    ],
+                                    "type": "string"
+                                },
+                                "ok": {
+                                    "$ref": "#/definitions/defs_ok_false"
+                                }
+                            },
+                            "required": [
+                                "ok",
+                                "error"
+                            ],
+                            "title": "auth.test error schema",
+                            "type": "object"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "slackAuth": [
+                            "none"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "auth"
+                ]
+            }
+        },
         "/bots.info": {
             "get": {
                 "consumes": [

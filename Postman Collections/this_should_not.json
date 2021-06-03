@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "f785c60e-6ba5-4f7d-945b-7db1116581ed",
+    "name": "This should not show up again",
+    "description": "blah blah blah",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "F1",
+      "item": [],
+      "_postman_id": "27a59a47-44c1-42aa-aa85-5542619e7dc5"
+    },
+    {
+      "name": "F3",
+      "item": [],
+      "_postman_id": "6bf564a1-4ff9-44bf-ad88-3262d9cc1e71"
+    },
+    {
+      "name": "F2",
+      "item": [
+        {
+          "name": "R1",
+          "_postman_id": "402dd653-a8b8-48fb-a830-56f27c96bf67",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "key",
+                "value": "value",
+                "type": "text"
+              },
+              {
+                "key": "some other key",
+                "value": "some other value",
+                "type": "text"
+              }
+            ],
+            "url": "{{some url}}"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "f35020b2-3ab4-497c-9949-1534e35f62fa"
+    }
+  ]
+}

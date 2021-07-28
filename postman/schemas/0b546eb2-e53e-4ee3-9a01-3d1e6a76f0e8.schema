@@ -12,7 +12,7 @@ paths:
       tags:
         - user
       parameters:
-        - name: id
+        - name: id1
           in: query
           description: ID of the user
           required: true

@@ -9,15 +9,20 @@
     {
       "name": "F1",
       "item": [],
-      "_postman_id": "27a59a47-44c1-42aa-aa85-5542619e7dc5",
+      "id": "27a59a47-44c1-42aa-aa85-5542619e7dc5",
       "description": "asdasd"
+    },
+    {
+      "name": "F3",
+      "item": [],
+      "id": "6bf564a1-4ff9-44bf-ad88-3262d9cc1e71"
     },
     {
       "name": "F2",
       "item": [
         {
           "name": "R1",
-          "_postman_id": "402dd653-a8b8-48fb-a830-56f27c96bf67",
+          "id": "402dd653-a8b8-48fb-a830-56f27c96bf67",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -40,12 +45,36 @@
           "response": []
         }
       ],
-      "_postman_id": "f35020b2-3ab4-497c-9949-1534e35f62fa"
+      "id": "f35020b2-3ab4-497c-9949-1534e35f62fa"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "47c05f81-ad80-447b-8ebf-e7bdbc23c7c3",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
     },
     {
-      "name": "F3",
-      "item": [],
-      "_postman_id": "6bf564a1-4ff9-44bf-ad88-3262d9cc1e71"
+      "listen": "test",
+      "script": {
+        "id": "adc84567-9096-4f90-950c-f9b428c185a5",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "582a4023-b97e-4618-b35d-8c7d4e1ddd7b",
+      "key": "a",
+      "value": "b"
     }
   ]
 }

@@ -8,7 +8,20 @@
   "item": [
     {
       "name": "F1",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "b70f3bdd-a34a-4865-b9a5-9847d7244512",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
       "id": "27a59a47-44c1-42aa-aa85-5542619e7dc5",
       "description": "asdasd"
     },
@@ -72,7 +85,7 @@
   ],
   "variable": [
     {
-      "id": "a32eec14-53e8-43e3-aef7-753cf5d283ba",
+      "id": "74dbaf4e-61ee-46bd-8fcb-df2e6afe0643",
       "key": "a",
       "value": "b"
     }

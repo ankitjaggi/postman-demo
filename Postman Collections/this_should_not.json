@@ -8,27 +8,9 @@
   "item": [
     {
       "name": "F1",
-      "item": [
-        {
-          "name": "New Request",
-          "id": "b70f3bdd-a34a-4865-b9a5-9847d7244512",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": []
-          },
-          "response": []
-        }
-      ],
+      "item": [],
       "id": "27a59a47-44c1-42aa-aa85-5542619e7dc5",
       "description": "asdasd"
-    },
-    {
-      "name": "F3",
-      "item": [],
-      "id": "6bf564a1-4ff9-44bf-ad88-3262d9cc1e71"
     },
     {
       "name": "F2",
@@ -59,35 +41,11 @@
         }
       ],
       "id": "f35020b2-3ab4-497c-9949-1534e35f62fa"
-    }
-  ],
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "id": "a48dc280-cbf5-4ee1-83f2-8ab2347229ce",
-        "type": "text/javascript",
-        "exec": [
-          "afafsdfgsgd"
-        ]
-      }
     },
     {
-      "listen": "test",
-      "script": {
-        "id": "78d87663-16d2-4454-9308-9949f09915e3",
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
-    }
-  ],
-  "variable": [
-    {
-      "id": "74dbaf4e-61ee-46bd-8fcb-df2e6afe0643",
-      "key": "a",
-      "value": "b"
+      "name": "F3",
+      "item": [],
+      "id": "6bf564a1-4ff9-44bf-ad88-3262d9cc1e71"
     }
   ]
 }
